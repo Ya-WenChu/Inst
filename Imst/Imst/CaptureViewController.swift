@@ -55,9 +55,9 @@ class CaptureViewController: UIViewController, UIImagePickerControllerDelegate, 
             Post.postUserImage(image: image, withCaption: caption, withCompletion: { (success: Bool, error: Error?) in
                 if(success == true) {
                     //Dismiss HUD
-                    MBProgressHUD.hide(for: self.view, animated: true)
+                    //MBProgressHUD.hide(for: self.view, animated: true)
                     
-                    self.dismiss(animated: true, completion: nil)
+                    
                     self.tabBarController?.selectedIndex = 0
                 } else {
                     let errorAlertController = UIAlertController(title: "Error!", message: "Some error occured", preferredStyle: .alert)
