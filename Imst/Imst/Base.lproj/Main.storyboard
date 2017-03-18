@@ -221,7 +221,7 @@
         <!--Profile-->
         <scene sceneID="Vxo-F0-fkb">
             <objects>
-                <viewController id="7wL-lq-s0j" customClass="ProfileViewController" sceneMemberID="viewController">
+                <viewController id="7wL-lq-s0j" customClass="ProfileViewController" customModule="Imst" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OP9-jC-MWU"/>
                         <viewControllerLayoutGuide type="bottom" id="pgh-LW-RTe"/>
@@ -236,7 +236,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Logout"/>
                                 <connections>
-                                    <action selector="logout:" destination="7wL-lq-s0j" eventType="touchUpInside" id="TlG-V5-4Lz"/>
+                                    <action selector="onLogout:" destination="7wL-lq-s0j" eventType="touchUpInside" id="ZnB-sJ-bYF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -246,7 +246,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lOj-sC-doo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="822"/>
+            <point key="canvasLocation" x="1858" y="952"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fY2-be-Hbp">
@@ -261,7 +261,7 @@
                     <connections>
                         <segue destination="zNZ-39-QCu" kind="relationship" relationship="viewControllers" id="O53-NP-0Oo"/>
                         <segue destination="e15-SK-Lx0" kind="relationship" relationship="viewControllers" id="lnK-pb-hxG"/>
-                        <segue destination="7wL-lq-s0j" kind="relationship" relationship="viewControllers" id="bdt-3R-fiY"/>
+                        <segue destination="7wL-lq-s0j" kind="relationship" relationship="viewControllers" id="CTr-JV-Iu8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PPq-Gs-lS1" userLabel="First Responder" sceneMemberID="firstResponder"/>

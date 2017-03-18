@@ -12,16 +12,6 @@ import MBProgressHUD
 
 class ProfileViewController: UIViewController {
 
-    @IBAction func logout(_ sender: Any) {
-        
-        PFUser.logOutInBackground { (error: Error?) in
-                print("Successfully logged out")
-                let relogin = self.storyboard?.instantiateViewController(withIdentifier: "LoginView")
-                self.show(relogin!, sender: self)
-                
-           
-        }
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +24,21 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onLogout(_ sender: Any) {
+        
+        PFUser.logOutInBackground { (error: Error?) in
+            if error == nil {
+                print("Successfully logged out")
+                
+                let relogin = self.storyboard?.instantiateViewController(withIdentifier: "LoginView")
+                self.show(relogin!, sender: self)
+            }
+            
+            
+            
+        }
+
+    }
 
     /*
     // MARK: - Navigation
